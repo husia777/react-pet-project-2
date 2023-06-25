@@ -1,14 +1,17 @@
 import Shop from "./components/Shop";
-import Header from './components/Header'
+import Header from "./components/Header";
 import Footer from "./components/Footer";
-import './index.css'
-
+import "./index.css";
+import { ContextProvider } from "./context";
 
 function App() {
   return (
     <>
       <Header />
-      <Shop />
+      <ContextProvider>
+        <Shop />
+      </ContextProvider>
+
       <Footer />
     </>
   );

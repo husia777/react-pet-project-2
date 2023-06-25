@@ -7,4 +7,3 @@ export {
     API_URL
 }
 
-console.log(API_KEY, API_URL)
